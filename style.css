@@ -44,6 +44,27 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.menu-close {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  outline: none;
+}
+.close-line {
+  width: 30px;
+  height: 3px;
+  top: 20px;
+  left: 5px;
+  display: inline-block;
+  background-color: #000;
+  position: absolute;
+}
+.close-line:first-child {
+  transform: rotate(45deg);
+}
+.close-line:last-child {
+  transform: rotate(-45deg);
+}
 
 .logo-box {
   float: left;
@@ -213,6 +234,7 @@ body {
 .works-box {
   position: relative;
 }
+
 .about {
   background-color: #e8ebf1;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
